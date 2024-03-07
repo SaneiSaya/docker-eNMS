@@ -10,17 +10,17 @@
     "version": 4.6
   },
   "authentication": {
-    "default": "database",
+    "default": "ldap",
     "landing_page": "/dashboard",
     "allow_password_change": true,
     "force_authentication_method": false,
     "methods": {
-      "database": {
-        "display_name": "Local User",
-        "enabled": true
-      },
       "ldap": {
         "display_name": "LDAP",
+        "enabled": true
+      },
+      "database": {
+        "display_name": "Local User",
         "enabled": true
       },
       "tacacs": {
