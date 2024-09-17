@@ -1396,7 +1396,7 @@ $(document).ready(function() {
   createNotificationBanner();
 });
 
-$(window).load(function() {
+$(window).on('load',(function() {
   NProgress.done();
 });
 
