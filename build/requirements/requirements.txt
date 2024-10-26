@@ -1,5 +1,5 @@
 ansible==8.7.0
-ansible-core==2.17.4
+ansible-core==2.17.5
 APScheduler==3.10.4
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
@@ -92,7 +92,7 @@ urllib3==2.2.2
 watchdog==4.0.1
 watchdog_gevent==0.2.0
 wcwidth==0.2.13
-Werkzeug==3.0.3
+Werkzeug==3.0.6
 wsproto==1.2.0
 WTForms==2.3.3
 xlrd==2.0.1
