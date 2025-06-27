@@ -29,6 +29,10 @@ RUN pip install -r /tmp/requirements_optional.txt
 # Copy the local directory content into the container
 COPY . /eNMS
 
+# Install newer jQuery 3.6.4 and copy to static directory
+RUN cd /eNMS && npm install jquery@3.6.4 && \
+    cp node_modules/jquery/dist/jquery.min.js /eNMS/eNMS/static/lib/jquery/jquery.min.js
+
 # Set the command to run when the container starts
 WORKDIR /eNMS
 CMD ["gunicorn", "-c", "gunicorn.py", "eNMS.server:server"]
