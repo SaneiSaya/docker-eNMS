@@ -66,9 +66,9 @@ services:
       - GUNICORN_LOG_LEVEL=info
       - DATABASE_URL=mysql://root:PASSWORD@localhost/enms?charset=utf8
     volumes:
-      - /data/docker/projects/enms/enms-scheduler:/root/projects
-      - /opt/docker/docker-enms/eNMS-Scheduler/eNMS:/eNMS
-      - /opt/docker/docker-enms/eNMS-Scheduler/eNMS/scheduler:/scheduler
+      - /data/docker/projects/enms:/root/projects
+      - /opt/docker/docker-enms/eNMS:/eNMS
+      - /opt/docker/docker-enms/eNMS/scheduler:/scheduler
       - ./logs:/home/centos/enms/logs
     networks:
       - nginx_proxy
