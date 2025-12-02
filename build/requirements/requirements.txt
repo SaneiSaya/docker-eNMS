@@ -92,7 +92,7 @@ urllib3
 watchdog
 watchdog_gevent
 wcwidth
-Werkzeug==3.0.6
+Werkzeug==3.1.4
 wsproto
 WTForms==2.3.3
 xlrd
